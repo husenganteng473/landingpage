@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://tuyulhelper.com/sitemap.xml
+
+# Blokir folder sensitif (jika nanti ada)
+Disallow: /src/
+Disallow: /assets/private/
