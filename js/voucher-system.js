@@ -24,11 +24,19 @@ function voucherSystem() {
         // Store the phone number for payment confirmation
         confirmationPhone: '6287728950115',
         plans: [
-            { name: '1 Bulan', old: null, price: 'Rp180.000', discount: null },
-            { name: '3 Bulan', old: 'Rp450.000', price: 'Rp480.000', discount: '-11%' },
-            { name: '6 Bulan', old: 'Rp900.000', price: 'Rp720.000', discount: '-33%', popular: true },
-            { name: '12 Bulan', old: 'Rp1.800.000', price: 'Rp1.200.000', discount: '-44%' }
+            { name: '1 Bulan', old: 'Rp200.000', price: 'Rp187.500', discount: '-6%' },
+            { name: '3 Bulan', old: 'Rp600.000', price: 'Rp562.500', discount: '-6%' },
+            { name: '6 Bulan', old: 'Rp1.200.000', price: 'Rp750.000', discount: '-38%', popular: true },
+            { name: '12 Bulan', old: 'Rp2.400.000', price: 'Rp1.250.000', discount: '-48%' }
         ],
+
+        // plans: [
+        //     { name: '1 Bulan', old: 'Rp200.000', price: 'Rp150.000', discount: '-25%' },
+        //     { name: '3 Bulan', old: 'Rp600.000', price: 'Rp450.000', discount: '-25%' },
+        //     { name: '6 Bulan', old: 'Rp1.200.000', price: 'Rp600.000', discount: '-50%', popular: true },
+        //     { name: '12 Bulan', old: 'Rp2.400.000', price: 'Rp1.000.000', discount: '-58%' }
+        // ],
+
 
         async loadVouchers() {
             try {
