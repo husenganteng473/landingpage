@@ -1,10 +1,20 @@
 // Alpine.js Data for Voucher System
 function voucherSystem() {
+    // Generate a session-persistent invoice ID for a specific package
+    function generateInvoiceId(packageName) {
+        // Create a key specific to the package
+        const storageKey = `invoiceId_${packageName}`;
+        
+        // Always generate a new ID (not using sessionStorage for persistence)
+        const newId = `TH-${packageName.substring(0, 2).toUpperCase()}${Date.now()}`;
+        return newId;
+    }
+
     return {
         isModalOpen: false,
         selectedPackage: '',
         selectedPrice: '0',
-        invoiceId: `TH-${Date.now()}`,
+        invoiceId: '',
         whatsappLink: '',
         voucherCode: '',
         discount: 0,
@@ -39,10 +49,9 @@ function voucherSystem() {
             this.voucherCode = '';
             this.voucherStatus = '';
             this.voucherApplied = false;
-            this.invoiceId = `TH-${Date.now()}`; // Buat ID baru setiap modal dibuka
-            this.whatsappLink = `https://wa.me/6287728950115?text=${encodeURIComponent(
-                `Halo Tuyul Helper, saya ingin konfirmasi pembayaran untuk paket ${name}. ID Invoice: ${this.invoiceId}`
-            )}`;
+            // Generate a new invoice ID each time modal is opened
+            this.invoiceId = generateInvoiceId(name);
+            this.updateWhatsAppLink();
             
             // Initialize Lucide icons after modal opens
             setTimeout(() => {
@@ -50,6 +59,35 @@ function voucherSystem() {
                     lucide.createIcons();
                 }
             }, 100);
+        },
+
+        // Function to update the WhatsApp link with current information
+        updateWhatsAppLink() {
+            let message = `Halo Tuyul Helper, saya ingin konfirmasi pembayaran untuk paket ${this.selectedPackage}. ID Invoice: ${this.invoiceId}`;
+            
+            // Add price information
+            const finalPrice = this.finalPrice();
+            message += `. Harga yang dibayar: Rp${this.formatPrice(finalPrice)}`;
+            
+            // Add voucher information if a voucher is applied
+            if (this.voucherApplied && this.voucherCode) {
+                message += `. Menggunakan kode voucher: ${this.voucherCode.toUpperCase()}`;
+            }
+            
+            this.whatsappLink = `https://wa.me/6287728950115?text=${encodeURIComponent(message)}`;
+        },
+
+        // Function to simulate payment confirmation (generates new ID)
+        confirmPayment() {
+            // Generate a new invoice ID for this package
+            this.invoiceId = generateInvoiceId(this.selectedPackage);
+            
+            // Update the WhatsApp link with the new ID
+            this.updateWhatsAppLink();
+            
+            // Here you would typically handle the payment confirmation logic
+            // For example, sending data to a server or showing a success message
+            alert('Pembayaran berhasil dikonfirmasi! Invoice baru telah dibuat untuk transaksi selanjutnya.');
         },
 
         applyVoucher() {
@@ -63,6 +101,9 @@ function voucherSystem() {
                 this.voucherApplied = false;
                 this.voucherStatus = 'Kode voucher tidak valid.';
             }
+            
+            // Update WhatsApp link to include voucher information
+            this.updateWhatsAppLink();
         },
 
         finalPrice() {
