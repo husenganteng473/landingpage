@@ -1,0 +1,36 @@
+# Sistem operasi
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+env/
+venv/
+*.env
+
+# Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Log / temp
+*.log
+*.swp
+*.bak
+
+# Frontend build
+node_modules/
+dist/
+build/
+
+# Secret / config files
+config.json
+
+# Ignore specific Python script
+update_voucher.py

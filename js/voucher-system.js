@@ -12,10 +12,10 @@ function voucherSystem() {
         voucherStatus: '',
         voucherApplied: false,
         plans: [
-            { name: '1 Bulan', old: null, price: 'Rp150.000', discount: null },
-            { name: '3 Bulan', old: 'Rp450.000', price: 'Rp400.000', discount: '-11%' },
-            { name: '6 Bulan', old: 'Rp900.000', price: 'Rp600.000', discount: '-33%', popular: true },
-            { name: '12 Bulan', old: 'Rp1.800.000', price: 'Rp1.000.000', discount: '-44%' }
+            { name: '1 Bulan', old: null, price: 'Rp180.000', discount: null },
+            { name: '3 Bulan', old: 'Rp450.000', price: 'Rp480.000', discount: '-11%' },
+            { name: '6 Bulan', old: 'Rp900.000', price: 'Rp720.000', discount: '-33%', popular: true },
+            { name: '12 Bulan', old: 'Rp1.800.000', price: 'Rp1.200.000', discount: '-44%' }
         ],
 
         async loadVouchers() {
