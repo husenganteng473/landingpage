@@ -9,23 +9,23 @@
     <priority>1.0</priority>
 
     <image:image>
-      <image:loc>https://tuyulhelper.com/src/rekapproduk.jpg</image:loc> 
+      <image:loc>https://tuyulhelper.com/assets/images/rekapproduk.jpg</image:loc> 
       <image:title>Dashboard Rekap Produk Tuyul Helper</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://tuyulhelper.com/src/live.jpg</image:loc>
+      <image:loc>https://tuyulhelper.com/assets/images/live.jpg</image:loc>
       <image:title>Fitur Monitoring Live Stream Komisi Afiliasi</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://tuyulhelper.com/src/performaharian.jpg</image:loc>
+      <image:loc>https://tuyulhelper.com/assets/images/performaharian.jpg</image:loc>
       <image:title>Grafik Performa Harian Shopee Affiliate</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://tuyulhelper.com/src/akun.jpg</image:loc>
+      <image:loc>https://tuyulhelper.com/assets/images/akun.jpg</image:loc>
       <image:title>Manajemen Akun Shopee Affiliate</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://tuyulhelper.com/src/pencairan.jpg</image:loc>
+      <image:loc>https://tuyulhelper.com/assets/images/pencairan.jpg</image:loc>
       <image:title>Tabel Pencairan Komisi</image:title>
     </image:image>
     

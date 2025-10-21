@@ -1,5 +1,7 @@
 User-agent: *
-Disallow: /src/
-Disallow: /assets/private/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /components/
 
 Sitemap: https://tuyulhelper.com/sitemap.xml

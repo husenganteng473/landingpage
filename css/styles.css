@@ -1,0 +1,47 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+.cta-button {
+    background-color: #2563eb;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+}
+
+.feature-card,
+.price-card,
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.price-card:hover,
+.testimonial-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Reduce font size to prevent overflow */
+.price-card .text-4xl {
+    font-size: 2rem;
+}
+
+.modal-price-text {
+    font-size: 2.5rem;
+}
+
+[x-cloak] {
+    display: none;
+}
