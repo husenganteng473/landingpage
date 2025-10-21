@@ -94,22 +94,22 @@
 <body class="bg-slate-50">
     <!-- Header Component -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="/" class="flex items-center space-x-2">
-            <img src="assets/images/ico.ico" alt="Logo Tuyul Helper" class="w-8 h-8 object-contain" />
-            <p class="text-2xl font-bold text-slate-800 tracking-wider"><span class="text-blue-600">Tuyul</span>
-                Helper</p>
-        </a>
-        <nav class="hidden md:flex space-x-8 text-slate-600 font-medium">
-            <a href="#features" class="hover:text-blue-600">Fitur</a>
-            <a href="#testimonials" class="hover:text-blue-600">Testimoni</a>
-            <a href="#pricing" class="hover:text-blue-600">Harga</a>
-            <a href="#faq" class="hover:text-blue-600">FAQ</a>
-        </nav>
-        <a href="#pricing" class="cta-button hidden md:block font-semibold py-2 px-6 rounded-lg shadow-sm">Pilih
-            Paket</a>
-    </div>
-</header>
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2">
+                <img src="assets/images/ico.ico" alt="Logo Tuyul Helper" class="w-8 h-8 object-contain" />
+                <p class="text-2xl font-bold text-slate-800 tracking-wider"><span class="text-blue-600">Tuyul</span>
+                    Helper</p>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-slate-600 font-medium">
+                <a href="#features" class="hover:text-blue-600">Fitur</a>
+                <a href="#testimonials" class="hover:text-blue-600">Testimoni</a>
+                <a href="#pricing" class="hover:text-blue-600">Harga</a>
+                <a href="#faq" class="hover:text-blue-600">FAQ</a>
+            </nav>
+            <a href="#pricing" class="cta-button hidden md:block font-semibold py-2 px-6 rounded-lg shadow-sm">Pilih
+                Paket</a>
+        </div>
+    </header>
 
     <main class="pt-20">
 
@@ -143,9 +143,11 @@
                             class="w-full flex-shrink-0 rounded-lg" />
                         <img src="assets/images/live.jpg" alt="Fitur monitoring live streaming komisi afiliasi Shopee"
                             class="w-full flex-shrink-0 rounded-lg" loading="lazy" />
-                        <img src="assets/images/performaharian.jpg" alt="Grafik laporan komisi harian dari bot Tuyul Helper"
+                        <img src="assets/images/performaharian.jpg"
+                            alt="Grafik laporan komisi harian dari bot Tuyul Helper"
                             class="w-full flex-shrink-0 rounded-lg" loading="lazy" />
-                        <img src="assets/images/akun.jpg" alt="Manajemen banyak akun Shopee Affiliate dalam satu platform"
+                        <img src="assets/images/akun.jpg"
+                            alt="Manajemen banyak akun Shopee Affiliate dalam satu platform"
                             class="w-full flex-shrink-0 rounded-lg" loading="lazy" />
                         <img src="assets/images/pencairan.jpg" alt="Tabel manajemen pencairan dana komisi afiliasi"
                             class="w-full flex-shrink-0 rounded-lg" loading="lazy" />
@@ -181,20 +183,20 @@
                         <p class="text-slate-600">Proses login yang lebih cepat dan efisien, menghemat waktu berharga
                             Anda.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg border border-slate-200 feature-card"><i data-lucide="bar-chart-2"
-                            class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <div class="bg-white p-6 rounded-lg border border-slate-200 feature-card"><i
+                            data-lucide="bar-chart-2" class="w-10 h-10 text-blue-600 mb-4"></i>
                         <h3 class="text-xl font-semibold mb-2">Pantau Performa & Komisi</h3>
                         <p class="text-slate-600">Lacak komisi dan performa setiap akun langsung dari dashboard utama.
                         </p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg border border-slate-200 feature-card"><i data-lucide="clapperboard"
-                            class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <div class="bg-white p-6 rounded-lg border border-slate-200 feature-card"><i
+                            data-lucide="clapperboard" class="w-10 h-10 text-blue-600 mb-4"></i>
                         <h3 class="text-xl font-semibold mb-2">Monitor Live Stream</h3>
                         <p class="text-slate-600">Lihat data performa afiliasi secara real-time saat mereka live stream.
                         </p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg border border-slate-200 feature-card"><i data-lucide="layout-dashboard"
-                            class="w-10 h-10 text-blue-600 mb-4"></i>
+                    <div class="bg-white p-6 rounded-lg border border-slate-200 feature-card"><i
+                            data-lucide="layout-dashboard" class="w-10 h-10 text-blue-600 mb-4"></i>
                         <h3 class="text-xl font-semibold mb-2">Dashboard Terpusat</h3>
                         <p class="text-slate-600">Akses semua data penting dari ratusan akun hanya dalam satu dashboard.
                         </p>
@@ -255,137 +257,122 @@
         </section>
 
         <section id="pricing" class="py-20 bg-slate-100">
-        <div 
-            class="container mx-auto px-6"
-            x-data="voucherSystem()"
-            x-init="loadVouchers()"
-        >
-            <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-slate-900">Paket Harga Fleksibel</h2>
-            <p class="text-slate-600 mt-4 max-w-2xl mx-auto">
-                Pilih paket yang paling sesuai dengan kebutuhan Anda. Dapatkan potongan harga dengan kode voucher!
-            </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-
-            <template x-for="plan in plans" :key="plan.name">
-                <div 
-                class="price-card bg-white p-8 rounded-lg text-center border border-slate-200 flex flex-col relative"
-                :class="plan.popular ? 'highlight-plan ring-2 ring-blue-500 shadow-xl' : ''"
-                >
-                <template x-if="plan.popular">
-                    <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-blue-600 text-white font-bold text-sm px-4 py-1 rounded-full">
-                    Paling Populer
-                    </span>
-                </template>
-
-                <h3 class="text-2xl font-semibold" x-text="plan.name"></h3>
-
-                <div class="my-4">
-                    <template x-if="plan.old">
-                    <p class="text-slate-400 line-through text-lg" x-text="plan.old"></p>
-                    </template>
-                    <p class="text-4xl font-bold text-blue-600 price-text" x-text="plan.price"></p>
+            <div class="container mx-auto px-6" x-data="voucherSystem()" x-init="loadVouchers()">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-slate-900">Paket Harga Fleksibel</h2>
+                    <p class="text-slate-600 mt-4 max-w-2xl mx-auto">
+                        Pilih paket yang paling sesuai dengan kebutuhan Anda. Dapatkan potongan harga dengan kode
+                        voucher!
+                    </p>
                 </div>
 
-                <template x-if="plan.discount">
-                    <p class="text-slate-500 text-sm" x-text="`Hemat ${plan.discount}`"></p>
-                </template>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
 
-                <div class="flex-grow"></div>
-                <button 
-                    @click="openModal(plan.name, plan.price)"
-                    class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg mt-6 transition"
-                >
-                    Pilih Paket
-                </button>
-                </div>
-            </template>
-            </div>
+                    <template x-for="plan in plans" :key="plan.name">
+                        <div class="price-card bg-white p-8 rounded-lg text-center border border-slate-200 flex flex-col relative"
+                            :class="plan.popular ? 'highlight-plan ring-2 ring-blue-500 shadow-xl' : ''">
+                            <template x-if="plan.popular">
+                                <span
+                                    class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-blue-600 text-white font-bold text-sm px-4 py-1 rounded-full">
+                                    Paling Populer
+                                </span>
+                            </template>
 
-            <div 
-            x-show="isModalOpen"
-            class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 p-4"
-            x-cloak
-            >
-            <div 
-                @click.away="isModalOpen = false"
-                class="bg-white rounded-lg shadow-2xl w-full max-w-lg flex flex-col"
-            >
-                <div class="px-8 pt-6 pb-4 border-b flex justify-between items-center">
-                <h3 class="text-2xl font-bold text-slate-800">Detail Pembayaran</h3>
-                <button @click="isModalOpen = false" class="text-3xl leading-none text-slate-500 hover:text-slate-800">&times;</button>
-                </div>
+                            <h3 class="text-2xl font-semibold" x-text="plan.name"></h3>
 
-                <div class="flex-1 overflow-y-auto p-8 space-y-6">
-                <div class="bg-slate-50 p-4 rounded-md border border-slate-200">
-                    <div class="flex justify-between mb-2">
-                    <span class="text-slate-600">Paket:</span>
-                    <span class="font-semibold" x-text="selectedPackage"></span>
-                    </div>
-                    <div class="flex justify-between">
-                    <span class="text-slate-600">ID Invoice:</span>
-                    <span class="font-semibold" x-text="invoiceId"></span>
-                    </div>
-                </div>
+                            <div class="my-4">
+                                <template x-if="plan.old">
+                                    <p class="text-slate-400 line-through text-lg" x-text="plan.old"></p>
+                                </template>
+                                <p class="text-4xl font-bold text-blue-600 price-text" x-text="plan.price"></p>
+                            </div>
 
-                <div class="text-center border-t border-b py-4">
-                    <p class="text-slate-600">Total yang harus dibayar:</p>
-                    <p class="text-4xl font-extrabold text-blue-600 modal-price-text" x-text="`Rp${formatPrice(finalPrice())}`"></p>
+                            <template x-if="plan.discount">
+                                <p class="text-slate-500 text-sm" x-text="`Hemat ${plan.discount}`"></p>
+                            </template>
 
-                    <div class="mt-4">
-                    <input 
-                        type="text" 
-                        placeholder="Masukkan kode voucher"
-                        x-model="voucherCode"
-                        class="border border-slate-300 p-2 rounded-md w-2/3 text-center"
-                    >
-                    <button 
-                        @click="applyVoucher()"
-                        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md ml-2"
-                    >Gunakan</button>
-                    </div>
-
-                    <template x-if="voucherStatus">
-                    <p 
-                        class="mt-2 text-sm font-medium" 
-                        :class="voucherApplied ? 'text-green-600' : 'text-red-600'"
-                        x-text="voucherStatus"
-                    ></p>
+                            <div class="flex-grow"></div>
+                            <button @click="openModal(plan.name, plan.price)"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg mt-6 transition">
+                                Pilih Paket
+                            </button>
+                        </div>
                     </template>
                 </div>
 
-                <div>
-                    <h4 class="font-semibold text-slate-800 mb-3 text-center">Silakan transfer ke rekening berikut:</h4>
-                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
-                    <p class="text-lg font-bold text-slate-800">Bank BCA</p>
-                    <div class="flex justify-between items-center mt-1">
-                        <p class="text-2xl font-mono text-slate-700 tracking-wider">2340 3794 14</p>
-                        <button 
-                        @click="copyToClipboard('2340379414')"
-                        class="bg-slate-200 hover:bg-slate-300 text-xs font-semibold py-1 px-3 rounded-md"
-                        >SALIN</button>
-                    </div>
-                    <p class="text-sm text-slate-600 mt-1">a.n. Muhammad Alihusen</p>
-                    </div>
-                </div>
-                </div>
+                <div x-show="isModalOpen"
+                    class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 p-4" x-cloak>
+                    <div @click.away="isModalOpen = false"
+                        class="bg-white rounded-lg shadow-2xl w-full max-w-lg flex flex-col">
+                        <div class="px-8 pt-6 pb-4 border-b flex justify-between items-center">
+                            <h3 class="text-2xl font-bold text-slate-800">Detail Pembayaran</h3>
+                            <button @click="isModalOpen = false"
+                                class="text-3xl leading-none text-slate-500 hover:text-slate-800">&times;</button>
+                        </div>
 
-                <div class="border-t px-8 pt-4 pb-6 text-center">
-                <p class="text-sm text-slate-500 mb-4">Setelah transfer, klik tombol di bawah ini untuk konfirmasi.</p>
-                <a 
-                    :href="whatsappLink"
-                    target="_blank"
-                    class="w-full inline-flex justify-center items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg"
-                >
-                    <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i> 
-                    <span>Saya Sudah Bayar</span>
-                </a>
+                        <div class="flex-1 overflow-y-auto p-8 space-y-6">
+                            <div class="bg-slate-50 p-4 rounded-md border border-slate-200">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-slate-600">Paket:</span>
+                                    <span class="font-semibold" x-text="selectedPackage"></span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-600">ID Invoice:</span>
+                                    <span class="font-semibold" x-text="invoiceId"></span>
+                                </div>
+                            </div>
+
+                            <div class="text-center border-t border-b py-4">
+                                <p class="text-slate-600">Total yang harus dibayar:</p>
+                                <p class="text-4xl font-extrabold text-blue-600 modal-price-text"
+                                    x-text="`Rp${formatPrice(finalPrice())}`"></p>
+
+                                <div class="mt-4">
+                                    <div class="flex">
+                                        <input type="text" placeholder="Masukkan kode voucher" x-model="voucherCode"
+                                            class="border border-slate-300 p-2 rounded-l-md flex-grow text-center focus:outline-none">
+                                        <button @click="applyVoucher()"
+                                            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-r-md">
+                                            Gunakan
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                                <template x-if="voucherStatus">
+                                    <p class="mt-2 text-sm font-medium"
+                                        :class="voucherApplied ? 'text-green-600' : 'text-red-600'"
+                                        x-text="voucherStatus"></p>
+                                </template>
+                            </div>
+
+                            <div>
+                                <h4 class="font-semibold text-slate-800 mb-3 text-center">Silakan transfer ke rekening
+                                    berikut:</h4>
+                                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                                    <p class="text-lg font-bold text-slate-800">Bank BCA</p>
+                                    <div class="flex justify-between items-center mt-1">
+                                        <p class="text-2xl font-mono text-slate-700 tracking-wider">2340 3794 14</p>
+                                        <button @click="copyToClipboard('2340379414')"
+                                            class="bg-slate-200 hover:bg-slate-300 text-xs font-semibold py-1 px-3 rounded-md">SALIN</button>
+                                    </div>
+                                    <p class="text-sm text-slate-600 mt-1">a.n. Muhammad Alihusen</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border-t px-8 pt-4 pb-6 text-center">
+                            <p class="text-sm text-slate-500 mb-4">Setelah transfer, klik tombol di bawah ini untuk
+                                konfirmasi.</p>
+                            <a :href="whatsappLink" target="_blank"
+                                class="w-full inline-flex justify-center items-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg">
+                                <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
+                                <span>Saya Sudah Bayar</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-        </div>
         </section>
 
         <section id="faq" class="py-20">
@@ -396,7 +383,8 @@
                         diajukan tentang bot otomatisasi kami.</p>
                 </div>
                 <div class="space-y-4" x-data="{ open: 1 }">
-                    <div class="bg-white border border-slate-200 rounded-lg"><button @click="open = (open === 1 ? 0 : 1)"
+                    <div class="bg-white border border-slate-200 rounded-lg"><button
+                            @click="open = (open === 1 ? 0 : 1)"
                             class="w-full text-left p-6 flex justify-between items-center">
                             <h3 class="font-semibold text-lg">Apa itu Tuyul Helper?</h3><i data-lucide="chevron-down"
                                 class="transition-transform" :class="{'rotate-180': open === 1}"></i>
@@ -407,7 +395,8 @@
                                 mengelola banyak akun afiliasi dari satu tempat secara efisien.</p>
                         </div>
                     </div>
-                    <div class="bg-white border border-slate-200 rounded-lg"><button @click="open = (open === 2 ? 0 : 2)"
+                    <div class="bg-white border border-slate-200 rounded-lg"><button
+                            @click="open = (open === 2 ? 0 : 2)"
                             class="w-full text-left p-6 flex justify-between items-center">
                             <h3 class="font-semibold text-lg">Apakah aman menggunakan Tuyul Helper?</h3><i
                                 data-lucide="chevron-down" class="transition-transform"
@@ -419,7 +408,8 @@
                                 aman untuk menjaga privasi dan keamanan akun.</p>
                         </div>
                     </div>
-                    <div class="bg-white border border-slate-200 rounded-lg"><button @click="open = (open === 3 ? 0 : 3)"
+                    <div class="bg-white border border-slate-200 rounded-lg"><button
+                            @click="open = (open === 3 ? 0 : 3)"
                             class="w-full text-left p-6 flex justify-between items-center">
                             <h3 class="font-semibold text-lg">Berapa banyak akun Shopee Affiliate yang bisa saya kelola?
                             </h3><i data-lucide="chevron-down" class="transition-transform"
@@ -431,7 +421,8 @@
                                 afiliasi sekaligus.</p>
                         </div>
                     </div>
-                    <div class="bg-white border border-slate-200 rounded-lg"><button @click="open = (open === 4 ? 0 : 4)"
+                    <div class="bg-white border border-slate-200 rounded-lg"><button
+                            @click="open = (open === 4 ? 0 : 4)"
                             class="w-full text-left p-6 flex justify-between items-center">
                             <h3 class="font-semibold text-lg">Apakah ada masa percobaan gratis?</h3><i
                                 data-lucide="chevron-down" class="transition-transform"
@@ -469,18 +460,18 @@
 
     <!-- Footer Component -->
     <footer class="bg-white border-t border-slate-200">
-    <div class="container mx-auto px-6 py-8 text-center text-slate-500">
-        <p>&copy; 2025 Tuyul Helper. Semua Hak Cipta Dilindungi.</p>
-        <div class="flex justify-center space-x-6 mt-4 text-slate-600 text-lg">
-            <a href="https://t.me/BotaxAutomation" target="_blank" class="hover:text-blue-600"
-                aria-label="Telegram"><i data-lucide="send"></i></a>
-            <a href="https://wa.me/6287728950115" target="_blank" class="hover:text-green-500"
-                aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
-            <a href="https://www.youtube.com/@BotAutomationExpert" target="_blank" class="hover:text-red-500"
-                aria-label="YouTube"><i data-lucide="youtube"></i></a>
+        <div class="container mx-auto px-6 py-8 text-center text-slate-500">
+            <p>&copy; 2025 Tuyul Helper. Semua Hak Cipta Dilindungi.</p>
+            <div class="flex justify-center space-x-6 mt-4 text-slate-600 text-lg">
+                <a href="https://t.me/BotaxAutomation" target="_blank" class="hover:text-blue-600"
+                    aria-label="Telegram"><i data-lucide="send"></i></a>
+                <a href="https://wa.me/6287728950115" target="_blank" class="hover:text-green-500"
+                    aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+                <a href="https://www.youtube.com/@BotAutomationExpert" target="_blank" class="hover:text-red-500"
+                    aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <!-- External JavaScript -->
     <script src="js/voucher-system.js"></script>
